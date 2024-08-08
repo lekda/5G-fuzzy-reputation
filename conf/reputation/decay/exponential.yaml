@@ -1,0 +1,3 @@
+_target_: reput.decay.exponential_decay
+_partial_: True
+lmbda: 0.5

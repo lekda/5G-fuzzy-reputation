@@ -1,0 +1,12 @@
+good:
+  _target_: reput.peer.Peer
+  behavior:
+    0.0: 0.95
+  transaction_duration: ${simulation.transaction_duration}
+  total_capacity: ${simulation.capacity}
+  breaking_rate: ${simulation.breaking_rate}
+  peer_interactions: ${simulation.peer_interactions}
+  initial_reput: ${simulation.initial_reput}
+  transaction_type: ${transaction_selector:${simulation.fuzzy}}
+  forgiveness_delay: ${simulation.forgiveness_delay}
+  label: "good"

@@ -1,0 +1,205 @@
+hydra:
+  run:
+    dir: results/run/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  sweep:
+    dir: results/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    subdir: ${hydra.job.override_dirname}
+  launcher:
+    _target_: hydra._internal.core_plugins.basic_launcher.BasicLauncher
+  sweeper:
+    _target_: hydra._internal.core_plugins.basic_sweeper.BasicSweeper
+    max_batch_size: null
+    params: null
+  help:
+    app_name: ${hydra.job.name}
+    header: '${hydra.help.app_name} is powered by Hydra.
+
+      '
+    footer: 'Powered by Hydra (https://hydra.cc)
+
+      Use --hydra-help to view Hydra specific help
+
+      '
+    template: '${hydra.help.header}
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (group=option)
+
+
+      $APP_CONFIG_GROUPS
+
+
+      == Config ==
+
+      Override anything in the config (foo.bar=value)
+
+
+      $CONFIG
+
+
+      ${hydra.help.footer}
+
+      '
+  hydra_help:
+    template: 'Hydra (${hydra.runtime.version})
+
+      See https://hydra.cc for more info.
+
+
+      == Flags ==
+
+      $FLAGS_HELP
+
+
+      == Configuration groups ==
+
+      Compose your configuration from those groups (For example, append hydra/job_logging=disabled
+      to command line)
+
+
+      $HYDRA_CONFIG_GROUPS
+
+
+      Use ''--cfg hydra'' to Show the Hydra config.
+
+      '
+    hydra_help: ???
+  hydra_logging:
+    version: 1
+    formatters:
+      simple:
+        format: '[%(asctime)s][HYDRA] %(message)s'
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+    root:
+      level: INFO
+      handlers:
+      - console
+    loggers:
+      logging_example:
+        level: DEBUG
+    disable_existing_loggers: false
+  job_logging:
+    version: 1
+    formatters:
+      simple:
+        format: '[%(asctime)s][%(name)s][%(levelname)s] - %(message)s'
+    handlers:
+      console:
+        class: logging.StreamHandler
+        formatter: simple
+        stream: ext://sys.stdout
+      file:
+        class: logging.FileHandler
+        formatter: simple
+        filename: ${hydra.runtime.output_dir}/${hydra.job.name}.log
+    root:
+      level: INFO
+      handlers:
+      - console
+      - file
+    disable_existing_loggers: false
+  env: {}
+  mode: MULTIRUN
+  searchpath: []
+  callbacks: {}
+  output_subdir: .hydra
+  overrides:
+    hydra:
+    - hydra.mode=MULTIRUN
+    task:
+    - reputation/decay=double_windows
+    - reputation.decay.base_win_size=20,10
+    - reputation.decay.small_win_size=5,3,1
+  job:
+    name: __main__
+    chdir: true
+    override_dirname: reputation.decay.base_win_size=20,10,reputation.decay.small_win_size=5,3,1,reputation/decay=double_windows
+    id: ???
+    num: ???
+    config_name: config
+    env_set: {}
+    env_copy: []
+    config:
+      override_dirname:
+        kv_sep: '='
+        item_sep: ','
+        exclude_keys: []
+  runtime:
+    version: 1.3.2
+    version_base: '1.3'
+    cwd: /home/lekda/Documents/tests/base-reputation-system
+    config_sources:
+    - path: hydra.conf
+      schema: pkg
+      provider: hydra
+    - path: /home/lekda/Documents/tests/base-reputation-system/conf
+      schema: file
+      provider: main
+    - path: ''
+      schema: structured
+      provider: schema
+    output_dir: ???
+    choices:
+      reputation/decay: double_windows
+      environment/distribution: single_failure
+      environment/global_parameters: base
+      hydra/env: default
+      hydra/callbacks: null
+      hydra/job_logging: default
+      hydra/hydra_logging: default
+      hydra/hydra_help: default
+      hydra/help: default
+      hydra/sweeper: basic
+      hydra/launcher: basic
+      hydra/output: default
+  verbose: false
+simulation:
+  seed: 56
+environment:
+  global_parameters:
+    _target_: reput.environment.Environment
+    reput: true
+    sim_length: 20
+    nb_peers: 20
+    newcommer_random_rate: 0.1
+    random_rate: 0.0
+  distribution:
+  - nb_peers: 15
+    build_func: ${environment.peers.good}
+  - nb_peers: 5
+    build_func: ${environment.peers.outage}
+  peers:
+    outage:
+      _target_: reput.peer.Peer
+      behavior:
+        0.0: 0.95
+        6.0: 0.0
+        14.0: 0.95
+      breaking_rate: 0.0
+      peer_interactions: 200
+      label: outage
+    good:
+      _target_: reput.peer.Peer
+      behavior:
+        0.0: 0.95
+      breaking_rate: 0.0
+      peer_interactions: 200
+      label: good
+    bad:
+      _target_: reput.peer.Peer
+      behavior:
+        0.0: 0.5
+      peer_interactions: 200
+      label: bad
+reputation:
+  decay:
+    _target_: reput.decay.adaptive_window
+    _partial_: true
+    base_win_size: 5.0
+    small_win_size: 2.0
+    threshold: 0.1

@@ -1,0 +1,12 @@
+# topology/core:
+#   - single
+#   - dense
+#   - scarce
+
+# topology/access:
+#   - dense
+#   - scarce
+# - nb_peers: 15
+#   build_func: ${topology.access.dense}
+# - nb_peers: 5
+#   build_func: ${topology.core.scarce}

@@ -1,0 +1,4 @@
+- nb_peers: 4
+  build_func: ${peers.good}
+- nb_peers: 4
+  build_func: ${peers.outage}

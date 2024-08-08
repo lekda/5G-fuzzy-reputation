@@ -1,0 +1,45 @@
+simulation:
+  seed: 56
+environment:
+  global_parameters:
+    _target_: reput.environment.Environment
+    reput: true
+    sim_length: 20
+    nb_peers: 20
+    newcommer_random_rate: 0.1
+    random_rate: 0.0
+  distribution:
+  - nb_peers: 15
+    build_func: ${environment.peers.good}
+  - nb_peers: 5
+    build_func: ${environment.peers.outage}
+  peers:
+    outage:
+      _target_: reput.peer.Peer
+      behavior:
+        0.0: 0.95
+        6.0: 0.0
+        14.0: 0.95
+      breaking_rate: 0.0
+      peer_interactions: 200
+      label: outage
+    good:
+      _target_: reput.peer.Peer
+      behavior:
+        0.0: 0.95
+      breaking_rate: 0.0
+      peer_interactions: 200
+      label: good
+    bad:
+      _target_: reput.peer.Peer
+      behavior:
+        0.0: 0.5
+      peer_interactions: 200
+      label: bad
+reputation:
+  decay:
+    _target_: reput.decay.adaptive_window
+    _partial_: true
+    base_win_size: 20
+    small_win_size: 1
+    threshold: 0.1

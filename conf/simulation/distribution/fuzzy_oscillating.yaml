@@ -1,0 +1,12 @@
+- nb_peers: 3
+  build_func: ${peers.f_embb_good}
+- nb_peers: 2
+  build_func: ${peers.f_embb_oscillating}
+- nb_peers: 3
+  build_func: ${peers.f_urllc_good}
+- nb_peers: 2
+  build_func: ${peers.f_urllc_oscillating}
+- nb_peers: 3
+  build_func: ${peers.f_mmtc_good}
+- nb_peers: 2
+  build_func: ${peers.f_mmtc_oscillating}

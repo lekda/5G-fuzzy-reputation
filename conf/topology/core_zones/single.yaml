@@ -1,0 +1,3 @@
+single:
+  _target_: reput.topology.CoreNetwork
+  peer_nb: 1

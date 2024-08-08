@@ -1,0 +1,10 @@
+# Bootstrap simulation environment
+_target_: reput.environment.Environment
+sim_length: ${simulation.sim_length}
+random_rate:
+  0.0: 1.0
+  4.0: 0.0
+newcommer_random_rate: ${simulation.newcommer_random_rate}
+r_sample_nb: ${simulation.r_sample_nb}
+reput: ${simulation.reput}
+seed: ${simulation.seed}

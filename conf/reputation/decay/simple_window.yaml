@@ -1,0 +1,3 @@
+_target_: reput.decay._simple_window
+_partial_: True
+hist_size: 5.0

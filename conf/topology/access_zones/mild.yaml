@@ -1,0 +1,3 @@
+mild:
+  _target_: reput.topology.AccessNetwork
+  peer_nb: 5

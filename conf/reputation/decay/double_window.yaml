@@ -1,0 +1,5 @@
+_target_: reput.decay.double_window
+_partial_: True
+base_win_size: 5.0
+small_win_size: 0.1
+threshold: 0.1

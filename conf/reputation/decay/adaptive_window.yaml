@@ -1,0 +1,6 @@
+_target_: reput.decay.adaptive_window
+_partial_: True
+base_win_size: 5.0
+small_win_size: 1.0
+gamma: 1.0
+threshold: 0.1

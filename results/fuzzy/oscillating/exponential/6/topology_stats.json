@@ -1,0 +1,183 @@
+{
+   "an_max_capacity": {
+      "an_01": 14.0,
+      "an_02": 12.0,
+      "an_03": 16.0,
+      "an_04": 15.333,
+      "an_05": 11.333,
+      "an_06": 14.666,
+      "an_07": 16.0,
+      "an_08": 18.666,
+      "an_09": 16.0,
+      "an_10": 16.0
+   },
+   "an_max_capacity_per_type": {
+      "an_01": {
+         "embb": 4.0,
+         "urllc": 6.0,
+         "mmtc": 4.0
+      },
+      "an_02": {
+         "embb": 4.0,
+         "urllc": 4.0,
+         "mmtc": 4.0
+      },
+      "an_03": {
+         "embb": 6.0,
+         "urllc": 6.0,
+         "mmtc": 4.0
+      },
+      "an_04": {
+         "embb": 2.0,
+         "urllc": 6.0,
+         "mmtc": 7.333
+      },
+      "an_05": {
+         "embb": 4.0,
+         "urllc": 2.0,
+         "mmtc": 5.333
+      },
+      "an_06": {
+         "embb": 4.0,
+         "urllc": 2.0,
+         "mmtc": 8.666
+      },
+      "an_07": {
+         "embb": 8.0,
+         "urllc": 8.0,
+         "mmtc": 0
+      },
+      "an_08": {
+         "embb": 4.0,
+         "urllc": 6.0,
+         "mmtc": 8.666
+      },
+      "an_09": {
+         "embb": 6.0,
+         "urllc": 6.0,
+         "mmtc": 4.0
+      },
+      "an_10": {
+         "embb": 8.0,
+         "urllc": 4.0,
+         "mmtc": 4.0
+      }
+   },
+   "an_peer": {
+      "an_01": [
+         "embb_good_001",
+         "embb_oscillating_002",
+         "urllc_good_003",
+         "urllc_oscillating_001",
+         "urllc_oscillating_002",
+         "mmtc_good_002",
+         "mmtc_oscillating_001"
+      ],
+      "an_02": [
+         "embb_good_003",
+         "embb_oscillating_001",
+         "urllc_good_002",
+         "urllc_oscillating_001",
+         "mmtc_good_001",
+         "mmtc_oscillating_001"
+      ],
+      "an_03": [
+         "embb_good_002",
+         "embb_good_003",
+         "embb_oscillating_001",
+         "urllc_good_001",
+         "urllc_good_003",
+         "urllc_oscillating_002",
+         "mmtc_good_001",
+         "mmtc_oscillating_001"
+      ],
+      "an_04": [
+         "embb_good_003",
+         "urllc_good_001",
+         "urllc_oscillating_001",
+         "urllc_oscillating_002",
+         "mmtc_good_002",
+         "mmtc_good_003",
+         "mmtc_oscillating_001"
+      ],
+      "an_05": [
+         "embb_good_002",
+         "embb_oscillating_002",
+         "urllc_good_001",
+         "mmtc_good_001",
+         "mmtc_oscillating_002"
+      ],
+      "an_06": [
+         "embb_good_001",
+         "embb_oscillating_001",
+         "urllc_good_002",
+         "mmtc_good_003",
+         "mmtc_oscillating_001",
+         "mmtc_oscillating_002"
+      ],
+      "an_07": [
+         "embb_good_001",
+         "embb_good_002",
+         "embb_good_003",
+         "embb_oscillating_001",
+         "urllc_good_001",
+         "urllc_good_002",
+         "urllc_good_003",
+         "urllc_oscillating_001"
+      ],
+      "an_08": [
+         "embb_good_002",
+         "embb_oscillating_002",
+         "urllc_good_001",
+         "urllc_good_002",
+         "urllc_oscillating_001",
+         "mmtc_good_002",
+         "mmtc_good_003",
+         "mmtc_oscillating_002"
+      ],
+      "an_09": [
+         "embb_good_001",
+         "embb_oscillating_001",
+         "embb_oscillating_002",
+         "urllc_good_002",
+         "urllc_good_003",
+         "urllc_oscillating_002",
+         "mmtc_good_001",
+         "mmtc_good_002"
+      ],
+      "an_10": [
+         "embb_good_001",
+         "embb_good_002",
+         "embb_good_003",
+         "embb_oscillating_002",
+         "urllc_good_003",
+         "urllc_oscillating_002",
+         "mmtc_good_001",
+         "mmtc_good_002"
+      ]
+   },
+   "transactions_dropped_no_peer_in_an": {
+      "an_01": 0,
+      "an_02": 0,
+      "an_03": 0,
+      "an_04": 0,
+      "an_05": 0,
+      "an_06": 0,
+      "an_07": 0,
+      "an_08": 0,
+      "an_09": 0,
+      "an_10": 0
+   },
+   "transactions_dropped_no_peer_capacity_in_an": {
+      "an_01": 0,
+      "an_02": 0,
+      "an_03": 0,
+      "an_04": 0,
+      "an_05": 0,
+      "an_06": 0,
+      "an_07": 0,
+      "an_08": 0,
+      "an_09": 0,
+      "an_10": 0
+   }
+}

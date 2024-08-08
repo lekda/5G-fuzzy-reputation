@@ -1,0 +1,364 @@
+{
+    "nb_participants": 15,
+    "nb_participants_labels": {
+        "embb_good": 3,
+        "embb_oscillating": 2,
+        "urllc_good": 3,
+        "urllc_oscillating": 2,
+        "mmtc_good": 3,
+        "mmtc_oscillating": 2
+    },
+    "nb_interactions": 2250,
+    "nb_interactions_labels": {
+        "embb_good": 618,
+        "embb_oscillating": 107,
+        "urllc_good": 501,
+        "urllc_oscillating": 229,
+        "mmtc_good": 724,
+        "mmtc_oscillating": 71
+    },
+    "labels_stats": {
+        "embb_good": {
+            "very satisfied": 0,
+            "satisfied": 604,
+            "neutral": 0,
+            "unsatisfied": 14,
+            "very unsatisfied": 0,
+            "total": 618
+        },
+        "embb_oscillating": {
+            "very satisfied": 0,
+            "satisfied": 85,
+            "neutral": 0,
+            "unsatisfied": 12,
+            "very unsatisfied": 10,
+            "total": 107
+        },
+        "urllc_good": {
+            "very satisfied": 0,
+            "satisfied": 486,
+            "neutral": 0,
+            "unsatisfied": 15,
+            "very unsatisfied": 0,
+            "total": 501
+        },
+        "urllc_oscillating": {
+            "very satisfied": 0,
+            "satisfied": 213,
+            "neutral": 0,
+            "unsatisfied": 8,
+            "very unsatisfied": 8,
+            "total": 229
+        },
+        "mmtc_good": {
+            "very satisfied": 694,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 30,
+            "very unsatisfied": 0,
+            "total": 724
+        },
+        "mmtc_oscillating": {
+            "very satisfied": 30,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 36,
+            "very unsatisfied": 5,
+            "total": 71
+        }
+    },
+    "peer_stats": {
+        "embb_good_001": {
+            "very satisfied": 0,
+            "satisfied": 117,
+            "neutral": 0,
+            "unsatisfied": 7,
+            "very unsatisfied": 0,
+            "total": 124
+        },
+        "embb_good_002": {
+            "very satisfied": 0,
+            "satisfied": 142,
+            "neutral": 0,
+            "unsatisfied": 5,
+            "very unsatisfied": 0,
+            "total": 147
+        },
+        "embb_good_003": {
+            "very satisfied": 0,
+            "satisfied": 345,
+            "neutral": 0,
+            "unsatisfied": 2,
+            "very unsatisfied": 0,
+            "total": 347
+        },
+        "embb_oscillating_001": {
+            "very satisfied": 0,
+            "satisfied": 33,
+            "neutral": 0,
+            "unsatisfied": 6,
+            "very unsatisfied": 1,
+            "total": 40
+        },
+        "embb_oscillating_002": {
+            "very satisfied": 0,
+            "satisfied": 52,
+            "neutral": 0,
+            "unsatisfied": 6,
+            "very unsatisfied": 9,
+            "total": 67
+        },
+        "urllc_good_001": {
+            "very satisfied": 0,
+            "satisfied": 45,
+            "neutral": 0,
+            "unsatisfied": 8,
+            "very unsatisfied": 0,
+            "total": 53
+        },
+        "urllc_good_002": {
+            "very satisfied": 0,
+            "satisfied": 359,
+            "neutral": 0,
+            "unsatisfied": 1,
+            "very unsatisfied": 0,
+            "total": 360
+        },
+        "urllc_good_003": {
+            "very satisfied": 0,
+            "satisfied": 82,
+            "neutral": 0,
+            "unsatisfied": 6,
+            "very unsatisfied": 0,
+            "total": 88
+        },
+        "urllc_oscillating_001": {
+            "very satisfied": 0,
+            "satisfied": 88,
+            "neutral": 0,
+            "unsatisfied": 3,
+            "very unsatisfied": 3,
+            "total": 94
+        },
+        "urllc_oscillating_002": {
+            "very satisfied": 0,
+            "satisfied": 125,
+            "neutral": 0,
+            "unsatisfied": 5,
+            "very unsatisfied": 5,
+            "total": 135
+        },
+        "mmtc_good_001": {
+            "very satisfied": 322,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 5,
+            "very unsatisfied": 0,
+            "total": 327
+        },
+        "mmtc_good_002": {
+            "very satisfied": 298,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 12,
+            "very unsatisfied": 0,
+            "total": 310
+        },
+        "mmtc_good_003": {
+            "very satisfied": 74,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 13,
+            "very unsatisfied": 0,
+            "total": 87
+        },
+        "mmtc_oscillating_001": {
+            "very satisfied": 15,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 20,
+            "very unsatisfied": 2,
+            "total": 37
+        },
+        "mmtc_oscillating_002": {
+            "very satisfied": 15,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 16,
+            "very unsatisfied": 3,
+            "total": 34
+        }
+    },
+    "peer_control_stats": {
+        "embb_good_001": {
+            "very satisfied": 25,
+            "satisfied": 99,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 124
+        },
+        "embb_good_002": {
+            "very satisfied": 147,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 147
+        },
+        "embb_good_003": {
+            "very satisfied": 347,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 347
+        },
+        "embb_oscillating_001": {
+            "very satisfied": 17,
+            "satisfied": 23,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 40
+        },
+        "embb_oscillating_002": {
+            "very satisfied": 54,
+            "satisfied": 13,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 67
+        },
+        "urllc_good_001": {
+            "very satisfied": 20,
+            "satisfied": 33,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 53
+        },
+        "urllc_good_002": {
+            "very satisfied": 360,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 360
+        },
+        "urllc_good_003": {
+            "very satisfied": 20,
+            "satisfied": 67,
+            "neutral": 1,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 88
+        },
+        "urllc_oscillating_001": {
+            "very satisfied": 94,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 94
+        },
+        "urllc_oscillating_002": {
+            "very satisfied": 135,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 135
+        },
+        "mmtc_good_001": {
+            "very satisfied": 327,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 327
+        },
+        "mmtc_good_002": {
+            "very satisfied": 309,
+            "satisfied": 0,
+            "neutral": 1,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 310
+        },
+        "mmtc_good_003": {
+            "very satisfied": 87,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 87
+        },
+        "mmtc_oscillating_001": {
+            "very satisfied": 37,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 37
+        },
+        "mmtc_oscillating_002": {
+            "very satisfied": 34,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 34
+        }
+    },
+    "labels_control_stats": {
+        "embb_good": {
+            "very satisfied": 519,
+            "satisfied": 99,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 618
+        },
+        "embb_oscillating": {
+            "very satisfied": 71,
+            "satisfied": 36,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 107
+        },
+        "urllc_good": {
+            "very satisfied": 400,
+            "satisfied": 100,
+            "neutral": 1,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 501
+        },
+        "urllc_oscillating": {
+            "very satisfied": 229,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 229
+        },
+        "mmtc_good": {
+            "very satisfied": 723,
+            "satisfied": 0,
+            "neutral": 1,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 724
+        },
+        "mmtc_oscillating": {
+            "very satisfied": 71,
+            "satisfied": 0,
+            "neutral": 0,
+            "unsatisfied": 0,
+            "very unsatisfied": 0,
+            "total": 71
+        }
+    }
+}

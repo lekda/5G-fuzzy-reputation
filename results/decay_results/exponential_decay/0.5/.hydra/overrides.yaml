@@ -1,0 +1,2 @@
+- reputation/decay=exponential
+- reputation.decay.lmbda=0.5

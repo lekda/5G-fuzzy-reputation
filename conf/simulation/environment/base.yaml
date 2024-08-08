@@ -1,0 +1,10 @@
+# Base simulation environment, it doesnt differ from the global default
+# & can be used as a template for new environment.
+_target_: reput.environment.Environment
+sim_length: ${simulation.sim_length}
+random_rate: ${simulation.random_rate}
+newcommer_random_rate: ${simulation.newcommer_random_rate}
+r_sample_nb: ${simulation.r_sample_nb}
+reput: ${simulation.reput}
+fuzzy: ${simulation.fuzzy}
+seed: ${simulation.seed}

@@ -1,0 +1,9 @@
+# Simulation environment used for testing decay
+# Reputation samlpes occurs more often
+_target_: reput.environment.Environment
+sim_length: ${simulation.sim_length}
+random_rate: ${simulation.random_rate}
+newcommer_random_rate: ${simulation.newcommer_random_rate}
+r_sample_nb: 100
+reput: ${simulation.reput}
+seed: ${simulation.seed}

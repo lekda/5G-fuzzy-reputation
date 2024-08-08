@@ -1,0 +1,336 @@
+simulation:
+  seed: 61
+  distribution:
+  - nb_peers: 5
+    build_func: ${peers.f_embb_good}
+  - nb_peers: 5
+    build_func: ${peers.f_urllc_good}
+  - nb_peers: 5
+    build_func: ${peers.f_mmtc_good}
+  environment:
+    _target_: reput.environment.Environment
+    sim_length: ${simulation.sim_length}
+    random_rate: ${simulation.random_rate}
+    newcommer_random_rate: ${simulation.newcommer_random_rate}
+    r_sample_nb: ${simulation.r_sample_nb}
+    reput: ${simulation.reput}
+    fuzzy: ${simulation.fuzzy}
+    seed: ${simulation.seed}
+  sim_length: 15
+  random_rate:
+    0.0: 0.0
+  newcommer_random_rate:
+    0.0: 0.0
+  r_sample_nb: 15
+  reput: true
+  fuzzy: true
+  transaction_duration: 0.025
+  capacity: 10.0
+  peer_interactions: 150
+  breaking_rate: 0.0
+  initial_reput:
+    latency: 1
+    bandwith: 1000
+    loss: 100000
+  forgiveness_delay: ${simulation.sim_length}
+topology:
+  access_topo:
+  - nb_zones: 10
+    build_func: ${topology.access_zones.dense}
+  access_zones:
+    dense:
+      _target_: reput.topology.AccessNetwork
+      peer_nb: 8
+    mild:
+      _target_: reput.topology.AccessNetwork
+      peer_nb: 5
+    scarce:
+      _target_: reput.topology.AccessNetwork
+      peer_nb: 3
+  core_topo:
+  - nb_zones: 5
+    build_func: ${topology.core_zones.dense}
+  core_zones:
+    dense:
+      _target_: reput.topology.CoreNetwork
+      peer_nb: 8
+    scarce:
+      _target_: reput.topology.CoreNetwork
+      peer_nb: 3
+    single:
+      _target_: reput.topology.CoreNetwork
+      peer_nb: 1
+peers:
+  outage:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0: 0.99
+      2.0: 0.0
+      2.5: 0.99
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: ${simulation.breaking_rate}
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: outage
+  good:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0: 0.95
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: ${simulation.breaking_rate}
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: good
+  f_embb_bad:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0:
+        latency: 60
+        bandwith: 50
+        loss: 1000
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: ${simulation.breaking_rate}
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: embb_bad
+    dispersion: low
+    usecase: eMBB
+  f_embb_good:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0:
+        latency: 5
+        bandwith: 400
+        loss: 100
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: ${simulation.breaking_rate}
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: embb_good
+    dispersion: low
+    usecase: eMBB
+  f_embb_outage:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0:
+        latency: 5
+        bandwith: 400
+        loss: 100
+      6.0:
+        latency: 350
+        bandwith: 1.0
+        loss: 1.0
+      8.0:
+        latency: 5
+        bandwith: 400
+        loss: 100
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: ${simulation.breaking_rate}
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: embb_outage
+    dispersion: low
+    usecase: eMBB
+  f_embb_oscillating:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0:
+        latency: 5
+        bandwith: 400
+        loss: 100
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: 0.05
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: embb_oscillating
+    dispersion: low
+    usecase: eMBB
+  f_mmtc_bad:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0:
+        latency: 75
+        bandwith: 50
+        loss: 500
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: ${simulation.breaking_rate}
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:simulation.fuzzy}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: mmtc_bad
+    dispersion: low
+    usecase: mMTC
+  f_mmtc_good:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0:
+        latency: 75
+        bandwith: 750
+        loss: 60000
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: ${simulation.breaking_rate}
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: mmtc_good
+    dispersion: low
+    usecase: mMTC
+  f_mmtc_outage:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0:
+        latency: 75
+        bandwith: 750
+        loss: 60000
+      6.0:
+        latency: 350
+        bandwith: 1.0
+        loss: 1.0
+      8.0:
+        latency: 75
+        bandwith: 750
+        loss: 60000
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: ${simulation.breaking_rate}
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: mmtc_outage
+    dispersion: low
+    usecase: mMTC
+  f_mmtc_oscillating:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0:
+        latency: 75
+        bandwith: 750
+        loss: 60000
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: 0.05
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: mmtc_oscillating
+    dispersion: low
+    usecase: mMTC
+  f_urllc_bad:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0:
+        latency: 75
+        bandwith: 300
+        loss: 100
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: ${simulation.breaking_rate}
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: urllc_bad
+    dispersion: low
+    usecase: URLLC
+  f_urllc_good:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0:
+        latency: 4
+        bandwith: 50
+        loss: 70000
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: ${simulation.breaking_rate}
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: urllc_good
+    dispersion: low
+    usecase: URLLC
+  f_urllc_outage:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0:
+        latency: 4
+        bandwith: 50
+        loss: 70000
+      6.0:
+        latency: 350
+        bandwith: 1.0
+        loss: 1.0
+      8.0:
+        latency: 4
+        bandwith: 50
+        loss: 70000
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: ${simulation.breaking_rate}
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: urllc_outage
+    dispersion: low
+    usecase: URLLC
+  f_urllc_oscillating:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0:
+        latency: 4
+        bandwith: 50
+        loss: 70000
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: 0.05
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: urllc_oscillating
+    dispersion: low
+    usecase: URLLC
+  bad:
+    _target_: reput.peer.Peer
+    behavior:
+      0.0: 0.5
+    transaction_duration: ${simulation.transaction_duration}
+    total_capacity: ${simulation.capacity}
+    breaking_rate: ${simulation.breaking_rate}
+    peer_interactions: ${simulation.peer_interactions}
+    initial_reput: ${simulation.initial_reput}
+    transaction_type: ${transaction_selector:${simulation.fuzzy}}
+    forgiveness_delay: ${simulation.forgiveness_delay}
+    label: bad
+reputation:
+  decay:
+    _target_: reput.decay.double_window
+    _partial_: true
+    base_win_size: 5.0
+    small_win_size: 0.1
+    threshold: 0.1

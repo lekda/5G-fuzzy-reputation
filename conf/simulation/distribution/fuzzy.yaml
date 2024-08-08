@@ -1,0 +1,6 @@
+- nb_peers: 5
+  build_func: ${peers.f_embb_good}
+- nb_peers: 5
+  build_func: ${peers.f_urllc_good}
+- nb_peers: 5
+  build_func: ${peers.f_mmtc_good}

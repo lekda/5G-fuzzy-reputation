@@ -1,0 +1,2 @@
+- reputation/decay=double_window
+- simulation.seed=57

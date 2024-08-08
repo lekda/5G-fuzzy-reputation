@@ -1,0 +1,3 @@
+- reputation/decay=double_windows
+- reputation.decay.base_win_size=20
+- reputation.decay.small_win_size=1

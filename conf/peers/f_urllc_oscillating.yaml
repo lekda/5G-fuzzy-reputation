@@ -1,0 +1,22 @@
+f_urllc_oscillating:
+  _target_: reput.peer.Peer
+  behavior:
+    0.0: { "latency": 4, "bandwith": 50, "loss": 70000 }
+    # 1.0: { "latency": 350, "bandwith": 1.0, "loss": 1.0 }
+    # 2.0: { "latency": 4, "bandwith": 50, "loss": 70000 }
+    # 4.0: { "latency": 350, "bandwith": 1.0, "loss": 1.0 }
+    # 5.0: { "latency": 4, "bandwith": 50, "loss": 70000 }
+    # 7.0: { "latency": 350, "bandwith": 1.0, "loss": 1.0 }
+    # 8.0: { "latency": 4, "bandwith": 50, "loss": 70000 }
+    # 9.0: { "latency": 350, "bandwith": 1.0, "loss": 1.0 }
+
+  transaction_duration: ${simulation.transaction_duration}
+  total_capacity: ${simulation.capacity}
+  breaking_rate: 0.05
+  peer_interactions: ${simulation.peer_interactions}
+  initial_reput: ${simulation.initial_reput}
+  transaction_type: ${transaction_selector:${simulation.fuzzy}}
+  forgiveness_delay: ${simulation.forgiveness_delay}
+  label: "urllc_oscillating"
+  dispersion: "low"
+  usecase: "URLLC"

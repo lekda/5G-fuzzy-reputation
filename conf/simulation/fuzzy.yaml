@@ -1,0 +1,55 @@
+# Contains the default parameters for the simulation
+# Those value can be overided in their respective class.
+
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# Default parameters for  the environment Class
+# May be overided in the environment config files.
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+# ---------------------------------------------------------
+# Length of the simulation
+sim_length: 15
+# ---------------------------------------------------------
+# Random rate biase the selection towards arbitrary neighbors
+random_rate:
+  0.0: 0.0
+# ---------------------------------------------------------
+# Newcommer random rate biase the selection toward newcommers only if they exist.
+newcommer_random_rate:
+  0.0: 0.0
+# ---------------------------------------------------------
+#Rate at which the peer reputation is sampled
+r_sample_nb: 15
+# ---------------------------------------------------------
+# Wether to use a the reputation system for the simulation
+reput: True
+# ---------------------------------------------------------
+# Wether Fuzzy logic should be used for the simulation
+fuzzy: True
+# %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+# Default parameters for the Peer Class
+# May be overided in the Peer config files.
+#%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+# transaction_duration / capacity / peer_interactions and distribution must be set according to each others
+# to prevent a transaction overflow.
+# ---------------------------------------------------------
+# Length of each transaction
+transaction_duration: 0.025
+# ---------------------------------------------------------
+# Numer of simultaneous interactions that a peer can handle.
+capacity: 10.0
+# ---------------------------------------------------------
+# Number of interactions that a single peer will **request** over the course of the simulation.
+# peer_interactions: 2000
+peer_interactions: 150
+# -------------s--------------------------------------------
+# Rate at which a failure occur.
+breaking_rate: 0.0
+# ---------------------------------------------------------
+# Reput of newcommer in the system => hardcoded at the best possible
+initial_reput: { "latency": 1, "bandwith": 1000, "loss": 100000 }
+# ---------------------------------------------------------
+# Delay before somone is forgiven, default is sim lenght meaning there is no forgiveness
+forgiveness_delay: ${simulation.sim_length}
+# forgiveness_delay: 10

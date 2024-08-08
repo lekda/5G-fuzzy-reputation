@@ -1,0 +1,74 @@
+# base-reputation Project configuration file
+# -------------------------------------
+#
+# This file is the main configuration input for base-reputation. It is parsed by the Hydra
+# configuration engine. For more information, see https://hydra.cc/docs/intro.
+#
+# The configuration is split into sections, each of which is described below. The
+# `defaults` list is used to select grouped configuration options. Defautls are applied
+# in order (`_self_` being the current file).
+# see: https://hydra.cc/docs/1.2/upgrades/1.0_to_1.1/default_composition_order/
+#
+# The architecture is as follows:
+# ```
+# conf/
+# ├── config.yaml             # This file, entry point for Hydra
+# ├── environment/            # Environment of the simulation
+# │   ├── distribution/       # Participant distribution
+# │   ├── peers/              # Peer behavior   ```
+
+simulation:
+  seed: 56
+# ------------------------------------
+#               DEFAULTS
+# ------------------------------------
+defaults:
+  - _self_
+  - simulation/distribution: fuzzy
+  - simulation/environment: base
+  - simulation: fuzzy
+  - topology: default
+  - topology/access_topo: dense
+  - topology/access_zones:
+      - dense
+      - mild
+      - scarce
+  - topology/core_topo: base
+  - topology/core_zones:
+      - dense
+      - scarce
+      - single
+  - peers:
+      - outage
+      - good
+      # - d_outage
+      # - d_good
+      - f_embb_bad
+      - f_embb_good
+      - f_embb_outage
+      - f_embb_oscillating
+      - f_mmtc_bad
+      - f_mmtc_good
+      - f_mmtc_outage
+      - f_mmtc_oscillating
+      - f_urllc_bad
+      - f_urllc_good
+      - f_urllc_outage
+      - f_urllc_oscillating
+      - bad
+  - reputation/decay: exponential
+# Hydra parallel execution launcher
+# - override hydra/launcher: joblib
+# ------------------------------------
+#               HYDRA
+# ------------------------------------
+
+hydra:
+  run:
+    dir: results/run/${now:%Y-%m-%d}/${now:%H-%M-%S}
+  job:
+    chdir: True
+  sweep:
+    dir: results/multirun/${now:%Y-%m-%d}/${now:%H-%M-%S}
+    # subdir: ${hydra.job.override_dirname} # -> / in the overide make a mess in the filesystem
+    subdir: ${hydra.job.num}

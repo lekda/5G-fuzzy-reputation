@@ -1,0 +1,11 @@
+simulation:
+  seed: 56
+environment:
+  distribution:
+    _target_: reput.Environment
+    length: 20
+  peers:
+    _target_: reput.Peer
+    success_rate: 0.5
+    transaction_rate: 1
+    label: bad

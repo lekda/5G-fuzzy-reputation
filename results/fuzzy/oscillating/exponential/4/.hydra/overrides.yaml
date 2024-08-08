@@ -1,0 +1,3 @@
+- simulation/distribution=fuzzy_oscillating
+- reputation/decay=exponential
+- simulation.seed=60

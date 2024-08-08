@@ -1,0 +1,3 @@
+- simulation/distribution=fuzzy_failure
+- reputation/decay=simple_window
+- simulation.seed=65

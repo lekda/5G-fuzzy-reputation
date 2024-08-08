@@ -1,0 +1,6 @@
+- nb_zones: 5
+  build_func: ${topology.access_zones.scarce}
+- nb_zones: 5
+  build_func: ${topology.access_zones.dense}
+- nb_zones: 10
+  build_func: ${topology.access_zones.mild}

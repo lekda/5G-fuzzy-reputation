@@ -1,0 +1,123 @@
+{
+    "nb_participants": 20,
+    "nb_participants_labels": {
+        "good": 15,
+        "bad": 5
+    },
+    "nb_interactions": 4000,
+    "nb_interactions_labels": 4000,
+    "labels_stats": {
+        "good": {
+            "positive": 3626,
+            "negative": 206,
+            "total": 3832
+        },
+        "bad": {
+            "positive": 93,
+            "negative": 75,
+            "total": 168
+        }
+    },
+    "global_stats": {
+        "good_000": {
+            "positive": 234,
+            "negative": 12,
+            "total": 246
+        },
+        "good_001": {
+            "positive": 283,
+            "negative": 17,
+            "total": 300
+        },
+        "good_002": {
+            "positive": 233,
+            "negative": 15,
+            "total": 248
+        },
+        "good_003": {
+            "positive": 287,
+            "negative": 13,
+            "total": 300
+        },
+        "good_004": {
+            "positive": 493,
+            "negative": 18,
+            "total": 511
+        },
+        "good_005": {
+            "positive": 246,
+            "negative": 16,
+            "total": 262
+        },
+        "good_006": {
+            "positive": 293,
+            "negative": 13,
+            "total": 306
+        },
+        "good_007": {
+            "positive": 131,
+            "negative": 12,
+            "total": 143
+        },
+        "good_008": {
+            "positive": 241,
+            "negative": 14,
+            "total": 255
+        },
+        "good_009": {
+            "positive": 192,
+            "negative": 11,
+            "total": 203
+        },
+        "good_010": {
+            "positive": 310,
+            "negative": 13,
+            "total": 323
+        },
+        "good_011": {
+            "positive": 135,
+            "negative": 14,
+            "total": 149
+        },
+        "good_012": {
+            "positive": 285,
+            "negative": 15,
+            "total": 300
+        },
+        "good_013": {
+            "positive": 140,
+            "negative": 13,
+            "total": 153
+        },
+        "good_014": {
+            "positive": 123,
+            "negative": 10,
+            "total": 133
+        },
+        "bad_000": {
+            "positive": 28,
+            "negative": 16,
+            "total": 44
+        },
+        "bad_001": {
+            "positive": 18,
+            "negative": 13,
+            "total": 31
+        },
+        "bad_002": {
+            "positive": 16,
+            "negative": 17,
+            "total": 33
+        },
+        "bad_003": {
+            "positive": 11,
+            "negative": 12,
+            "total": 23
+        },
+        "bad_004": {
+            "positive": 20,
+            "negative": 17,
+            "total": 37
+        }
+    }
+}

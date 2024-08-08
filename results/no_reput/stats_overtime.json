@@ -1,0 +1,1146 @@
+{
+     "labels_stats": {
+          "q1": {
+               "good": {
+                    "positive": 258,
+                    "negative": 11,
+                    "total": 269
+               },
+               "bad": {
+                    "positive": 49,
+                    "negative": 51,
+                    "total": 100
+               }
+          },
+          "q2": {
+               "good": {
+                    "positive": 280,
+                    "negative": 14,
+                    "total": 294
+               },
+               "bad": {
+                    "positive": 54,
+                    "negative": 52,
+                    "total": 106
+               }
+          },
+          "q3": {
+               "good": {
+                    "positive": 280,
+                    "negative": 19,
+                    "total": 299
+               },
+               "bad": {
+                    "positive": 37,
+                    "negative": 42,
+                    "total": 79
+               }
+          },
+          "q4": {
+               "good": {
+                    "positive": 309,
+                    "negative": 14,
+                    "total": 323
+               },
+               "bad": {
+                    "positive": 52,
+                    "negative": 49,
+                    "total": 101
+               }
+          },
+          "q5": {
+               "good": {
+                    "positive": 279,
+                    "negative": 14,
+                    "total": 293
+               },
+               "bad": {
+                    "positive": 43,
+                    "negative": 61,
+                    "total": 104
+               }
+          },
+          "q6": {
+               "good": {
+                    "positive": 302,
+                    "negative": 15,
+                    "total": 317
+               },
+               "bad": {
+                    "positive": 51,
+                    "negative": 50,
+                    "total": 101
+               }
+          },
+          "q7": {
+               "good": {
+                    "positive": 268,
+                    "negative": 18,
+                    "total": 286
+               },
+               "bad": {
+                    "positive": 41,
+                    "negative": 58,
+                    "total": 99
+               }
+          },
+          "q8": {
+               "good": {
+                    "positive": 293,
+                    "negative": 17,
+                    "total": 310
+               },
+               "bad": {
+                    "positive": 52,
+                    "negative": 48,
+                    "total": 100
+               }
+          },
+          "q9": {
+               "good": {
+                    "positive": 282,
+                    "negative": 21,
+                    "total": 303
+               },
+               "bad": {
+                    "positive": 60,
+                    "negative": 46,
+                    "total": 106
+               }
+          },
+          "q10": {
+               "good": {
+                    "positive": 292,
+                    "negative": 10,
+                    "total": 302
+               },
+               "bad": {
+                    "positive": 53,
+                    "negative": 55,
+                    "total": 108
+               }
+          }
+     },
+     "global_stats": {
+          "q1": {
+               "good_000": {
+                    "positive": 24,
+                    "negative": 0,
+                    "total": 24
+               },
+               "good_001": {
+                    "positive": 13,
+                    "negative": 0,
+                    "total": 13
+               },
+               "good_002": {
+                    "positive": 23,
+                    "negative": 1,
+                    "total": 24
+               },
+               "good_003": {
+                    "positive": 18,
+                    "negative": 0,
+                    "total": 18
+               },
+               "good_004": {
+                    "positive": 11,
+                    "negative": 1,
+                    "total": 12
+               },
+               "good_005": {
+                    "positive": 18,
+                    "negative": 1,
+                    "total": 19
+               },
+               "good_006": {
+                    "positive": 16,
+                    "negative": 0,
+                    "total": 16
+               },
+               "good_007": {
+                    "positive": 16,
+                    "negative": 0,
+                    "total": 16
+               },
+               "good_008": {
+                    "positive": 18,
+                    "negative": 2,
+                    "total": 20
+               },
+               "good_009": {
+                    "positive": 17,
+                    "negative": 0,
+                    "total": 17
+               },
+               "good_010": {
+                    "positive": 22,
+                    "negative": 1,
+                    "total": 23
+               },
+               "good_011": {
+                    "positive": 11,
+                    "negative": 1,
+                    "total": 12
+               },
+               "good_012": {
+                    "positive": 12,
+                    "negative": 1,
+                    "total": 13
+               },
+               "good_013": {
+                    "positive": 17,
+                    "negative": 1,
+                    "total": 18
+               },
+               "good_014": {
+                    "positive": 22,
+                    "negative": 2,
+                    "total": 24
+               },
+               "bad_000": {
+                    "positive": 10,
+                    "negative": 13,
+                    "total": 23
+               },
+               "bad_001": {
+                    "positive": 12,
+                    "negative": 7,
+                    "total": 19
+               },
+               "bad_002": {
+                    "positive": 5,
+                    "negative": 4,
+                    "total": 9
+               },
+               "bad_003": {
+                    "positive": 11,
+                    "negative": 11,
+                    "total": 22
+               },
+               "bad_004": {
+                    "positive": 11,
+                    "negative": 16,
+                    "total": 27
+               }
+          },
+          "q2": {
+               "good_000": {
+                    "positive": 20,
+                    "negative": 0,
+                    "total": 20
+               },
+               "good_001": {
+                    "positive": 19,
+                    "negative": 0,
+                    "total": 19
+               },
+               "good_002": {
+                    "positive": 19,
+                    "negative": 3,
+                    "total": 22
+               },
+               "good_003": {
+                    "positive": 16,
+                    "negative": 4,
+                    "total": 20
+               },
+               "good_004": {
+                    "positive": 14,
+                    "negative": 1,
+                    "total": 15
+               },
+               "good_005": {
+                    "positive": 13,
+                    "negative": 1,
+                    "total": 14
+               },
+               "good_006": {
+                    "positive": 29,
+                    "negative": 0,
+                    "total": 29
+               },
+               "good_007": {
+                    "positive": 21,
+                    "negative": 1,
+                    "total": 22
+               },
+               "good_008": {
+                    "positive": 12,
+                    "negative": 0,
+                    "total": 12
+               },
+               "good_009": {
+                    "positive": 21,
+                    "negative": 0,
+                    "total": 21
+               },
+               "good_010": {
+                    "positive": 17,
+                    "negative": 1,
+                    "total": 18
+               },
+               "good_011": {
+                    "positive": 15,
+                    "negative": 1,
+                    "total": 16
+               },
+               "good_012": {
+                    "positive": 20,
+                    "negative": 0,
+                    "total": 20
+               },
+               "good_013": {
+                    "positive": 18,
+                    "negative": 2,
+                    "total": 20
+               },
+               "good_014": {
+                    "positive": 26,
+                    "negative": 0,
+                    "total": 26
+               },
+               "bad_000": {
+                    "positive": 16,
+                    "negative": 10,
+                    "total": 26
+               },
+               "bad_001": {
+                    "positive": 12,
+                    "negative": 13,
+                    "total": 25
+               },
+               "bad_002": {
+                    "positive": 6,
+                    "negative": 7,
+                    "total": 13
+               },
+               "bad_003": {
+                    "positive": 12,
+                    "negative": 13,
+                    "total": 25
+               },
+               "bad_004": {
+                    "positive": 8,
+                    "negative": 9,
+                    "total": 17
+               }
+          },
+          "q3": {
+               "good_000": {
+                    "positive": 22,
+                    "negative": 2,
+                    "total": 24
+               },
+               "good_001": {
+                    "positive": 23,
+                    "negative": 3,
+                    "total": 26
+               },
+               "good_002": {
+                    "positive": 22,
+                    "negative": 0,
+                    "total": 22
+               },
+               "good_003": {
+                    "positive": 24,
+                    "negative": 1,
+                    "total": 25
+               },
+               "good_004": {
+                    "positive": 22,
+                    "negative": 2,
+                    "total": 24
+               },
+               "good_005": {
+                    "positive": 22,
+                    "negative": 0,
+                    "total": 22
+               },
+               "good_006": {
+                    "positive": 16,
+                    "negative": 0,
+                    "total": 16
+               },
+               "good_007": {
+                    "positive": 16,
+                    "negative": 2,
+                    "total": 18
+               },
+               "good_008": {
+                    "positive": 13,
+                    "negative": 1,
+                    "total": 14
+               },
+               "good_009": {
+                    "positive": 13,
+                    "negative": 3,
+                    "total": 16
+               },
+               "good_010": {
+                    "positive": 13,
+                    "negative": 0,
+                    "total": 13
+               },
+               "good_011": {
+                    "positive": 22,
+                    "negative": 2,
+                    "total": 24
+               },
+               "good_012": {
+                    "positive": 14,
+                    "negative": 1,
+                    "total": 15
+               },
+               "good_013": {
+                    "positive": 14,
+                    "negative": 1,
+                    "total": 15
+               },
+               "good_014": {
+                    "positive": 24,
+                    "negative": 1,
+                    "total": 25
+               },
+               "bad_000": {
+                    "positive": 13,
+                    "negative": 10,
+                    "total": 23
+               },
+               "bad_001": {
+                    "positive": 12,
+                    "negative": 9,
+                    "total": 21
+               },
+               "bad_002": {
+                    "positive": 5,
+                    "negative": 6,
+                    "total": 11
+               },
+               "bad_003": {
+                    "positive": 3,
+                    "negative": 8,
+                    "total": 11
+               },
+               "bad_004": {
+                    "positive": 4,
+                    "negative": 9,
+                    "total": 13
+               }
+          },
+          "q4": {
+               "good_000": {
+                    "positive": 21,
+                    "negative": 1,
+                    "total": 22
+               },
+               "good_001": {
+                    "positive": 19,
+                    "negative": 0,
+                    "total": 19
+               },
+               "good_002": {
+                    "positive": 26,
+                    "negative": 0,
+                    "total": 26
+               },
+               "good_003": {
+                    "positive": 12,
+                    "negative": 0,
+                    "total": 12
+               },
+               "good_004": {
+                    "positive": 19,
+                    "negative": 1,
+                    "total": 20
+               },
+               "good_005": {
+                    "positive": 21,
+                    "negative": 1,
+                    "total": 22
+               },
+               "good_006": {
+                    "positive": 17,
+                    "negative": 0,
+                    "total": 17
+               },
+               "good_007": {
+                    "positive": 14,
+                    "negative": 1,
+                    "total": 15
+               },
+               "good_008": {
+                    "positive": 29,
+                    "negative": 1,
+                    "total": 30
+               },
+               "good_009": {
+                    "positive": 19,
+                    "negative": 1,
+                    "total": 20
+               },
+               "good_010": {
+                    "positive": 29,
+                    "negative": 1,
+                    "total": 30
+               },
+               "good_011": {
+                    "positive": 18,
+                    "negative": 1,
+                    "total": 19
+               },
+               "good_012": {
+                    "positive": 22,
+                    "negative": 2,
+                    "total": 24
+               },
+               "good_013": {
+                    "positive": 18,
+                    "negative": 2,
+                    "total": 20
+               },
+               "good_014": {
+                    "positive": 25,
+                    "negative": 2,
+                    "total": 27
+               },
+               "bad_000": {
+                    "positive": 11,
+                    "negative": 9,
+                    "total": 20
+               },
+               "bad_001": {
+                    "positive": 18,
+                    "negative": 12,
+                    "total": 30
+               },
+               "bad_002": {
+                    "positive": 6,
+                    "negative": 9,
+                    "total": 15
+               },
+               "bad_003": {
+                    "positive": 8,
+                    "negative": 11,
+                    "total": 19
+               },
+               "bad_004": {
+                    "positive": 9,
+                    "negative": 8,
+                    "total": 17
+               }
+          },
+          "q5": {
+               "good_000": {
+                    "positive": 20,
+                    "negative": 0,
+                    "total": 20
+               },
+               "good_001": {
+                    "positive": 18,
+                    "negative": 1,
+                    "total": 19
+               },
+               "good_002": {
+                    "positive": 22,
+                    "negative": 1,
+                    "total": 23
+               },
+               "good_003": {
+                    "positive": 16,
+                    "negative": 0,
+                    "total": 16
+               },
+               "good_004": {
+                    "positive": 19,
+                    "negative": 0,
+                    "total": 19
+               },
+               "good_005": {
+                    "positive": 15,
+                    "negative": 1,
+                    "total": 16
+               },
+               "good_006": {
+                    "positive": 16,
+                    "negative": 3,
+                    "total": 19
+               },
+               "good_007": {
+                    "positive": 17,
+                    "negative": 2,
+                    "total": 19
+               },
+               "good_008": {
+                    "positive": 20,
+                    "negative": 1,
+                    "total": 21
+               },
+               "good_009": {
+                    "positive": 19,
+                    "negative": 0,
+                    "total": 19
+               },
+               "good_010": {
+                    "positive": 28,
+                    "negative": 1,
+                    "total": 29
+               },
+               "good_011": {
+                    "positive": 11,
+                    "negative": 2,
+                    "total": 13
+               },
+               "good_012": {
+                    "positive": 24,
+                    "negative": 0,
+                    "total": 24
+               },
+               "good_013": {
+                    "positive": 17,
+                    "negative": 0,
+                    "total": 17
+               },
+               "good_014": {
+                    "positive": 17,
+                    "negative": 2,
+                    "total": 19
+               },
+               "bad_000": {
+                    "positive": 6,
+                    "negative": 6,
+                    "total": 12
+               },
+               "bad_001": {
+                    "positive": 12,
+                    "negative": 12,
+                    "total": 24
+               },
+               "bad_002": {
+                    "positive": 8,
+                    "negative": 9,
+                    "total": 17
+               },
+               "bad_003": {
+                    "positive": 6,
+                    "negative": 19,
+                    "total": 25
+               },
+               "bad_004": {
+                    "positive": 11,
+                    "negative": 15,
+                    "total": 26
+               }
+          },
+          "q6": {
+               "good_000": {
+                    "positive": 24,
+                    "negative": 1,
+                    "total": 25
+               },
+               "good_001": {
+                    "positive": 18,
+                    "negative": 0,
+                    "total": 18
+               },
+               "good_002": {
+                    "positive": 22,
+                    "negative": 1,
+                    "total": 23
+               },
+               "good_003": {
+                    "positive": 21,
+                    "negative": 0,
+                    "total": 21
+               },
+               "good_004": {
+                    "positive": 21,
+                    "negative": 1,
+                    "total": 22
+               },
+               "good_005": {
+                    "positive": 19,
+                    "negative": 1,
+                    "total": 20
+               },
+               "good_006": {
+                    "positive": 23,
+                    "negative": 1,
+                    "total": 24
+               },
+               "good_007": {
+                    "positive": 16,
+                    "negative": 0,
+                    "total": 16
+               },
+               "good_008": {
+                    "positive": 32,
+                    "negative": 0,
+                    "total": 32
+               },
+               "good_009": {
+                    "positive": 17,
+                    "negative": 2,
+                    "total": 19
+               },
+               "good_010": {
+                    "positive": 22,
+                    "negative": 2,
+                    "total": 24
+               },
+               "good_011": {
+                    "positive": 17,
+                    "negative": 2,
+                    "total": 19
+               },
+               "good_012": {
+                    "positive": 19,
+                    "negative": 1,
+                    "total": 20
+               },
+               "good_013": {
+                    "positive": 15,
+                    "negative": 0,
+                    "total": 15
+               },
+               "good_014": {
+                    "positive": 16,
+                    "negative": 3,
+                    "total": 19
+               },
+               "bad_000": {
+                    "positive": 11,
+                    "negative": 11,
+                    "total": 22
+               },
+               "bad_001": {
+                    "positive": 16,
+                    "negative": 9,
+                    "total": 25
+               },
+               "bad_002": {
+                    "positive": 6,
+                    "negative": 11,
+                    "total": 17
+               },
+               "bad_003": {
+                    "positive": 8,
+                    "negative": 7,
+                    "total": 15
+               },
+               "bad_004": {
+                    "positive": 10,
+                    "negative": 12,
+                    "total": 22
+               }
+          },
+          "q7": {
+               "good_000": {
+                    "positive": 23,
+                    "negative": 0,
+                    "total": 23
+               },
+               "good_001": {
+                    "positive": 19,
+                    "negative": 2,
+                    "total": 21
+               },
+               "good_002": {
+                    "positive": 19,
+                    "negative": 0,
+                    "total": 19
+               },
+               "good_003": {
+                    "positive": 16,
+                    "negative": 2,
+                    "total": 18
+               },
+               "good_004": {
+                    "positive": 13,
+                    "negative": 1,
+                    "total": 14
+               },
+               "good_005": {
+                    "positive": 17,
+                    "negative": 1,
+                    "total": 18
+               },
+               "good_006": {
+                    "positive": 18,
+                    "negative": 1,
+                    "total": 19
+               },
+               "good_007": {
+                    "positive": 16,
+                    "negative": 2,
+                    "total": 18
+               },
+               "good_008": {
+                    "positive": 19,
+                    "negative": 1,
+                    "total": 20
+               },
+               "good_009": {
+                    "positive": 13,
+                    "negative": 1,
+                    "total": 14
+               },
+               "good_010": {
+                    "positive": 8,
+                    "negative": 1,
+                    "total": 9
+               },
+               "good_011": {
+                    "positive": 22,
+                    "negative": 2,
+                    "total": 24
+               },
+               "good_012": {
+                    "positive": 17,
+                    "negative": 0,
+                    "total": 17
+               },
+               "good_013": {
+                    "positive": 29,
+                    "negative": 2,
+                    "total": 31
+               },
+               "good_014": {
+                    "positive": 19,
+                    "negative": 2,
+                    "total": 21
+               },
+               "bad_000": {
+                    "positive": 10,
+                    "negative": 10,
+                    "total": 20
+               },
+               "bad_001": {
+                    "positive": 5,
+                    "negative": 10,
+                    "total": 15
+               },
+               "bad_002": {
+                    "positive": 10,
+                    "negative": 15,
+                    "total": 25
+               },
+               "bad_003": {
+                    "positive": 7,
+                    "negative": 16,
+                    "total": 23
+               },
+               "bad_004": {
+                    "positive": 9,
+                    "negative": 7,
+                    "total": 16
+               }
+          },
+          "q8": {
+               "good_000": {
+                    "positive": 25,
+                    "negative": 0,
+                    "total": 25
+               },
+               "good_001": {
+                    "positive": 17,
+                    "negative": 0,
+                    "total": 17
+               },
+               "good_002": {
+                    "positive": 26,
+                    "negative": 1,
+                    "total": 27
+               },
+               "good_003": {
+                    "positive": 15,
+                    "negative": 1,
+                    "total": 16
+               },
+               "good_004": {
+                    "positive": 23,
+                    "negative": 4,
+                    "total": 27
+               },
+               "good_005": {
+                    "positive": 25,
+                    "negative": 1,
+                    "total": 26
+               },
+               "good_006": {
+                    "positive": 19,
+                    "negative": 2,
+                    "total": 21
+               },
+               "good_007": {
+                    "positive": 20,
+                    "negative": 0,
+                    "total": 20
+               },
+               "good_008": {
+                    "positive": 16,
+                    "negative": 1,
+                    "total": 17
+               },
+               "good_009": {
+                    "positive": 16,
+                    "negative": 1,
+                    "total": 17
+               },
+               "good_010": {
+                    "positive": 16,
+                    "negative": 3,
+                    "total": 19
+               },
+               "good_011": {
+                    "positive": 16,
+                    "negative": 0,
+                    "total": 16
+               },
+               "good_012": {
+                    "positive": 17,
+                    "negative": 1,
+                    "total": 18
+               },
+               "good_013": {
+                    "positive": 25,
+                    "negative": 1,
+                    "total": 26
+               },
+               "good_014": {
+                    "positive": 17,
+                    "negative": 1,
+                    "total": 18
+               },
+               "bad_000": {
+                    "positive": 14,
+                    "negative": 8,
+                    "total": 22
+               },
+               "bad_001": {
+                    "positive": 6,
+                    "negative": 11,
+                    "total": 17
+               },
+               "bad_002": {
+                    "positive": 11,
+                    "negative": 11,
+                    "total": 22
+               },
+               "bad_003": {
+                    "positive": 12,
+                    "negative": 5,
+                    "total": 17
+               },
+               "bad_004": {
+                    "positive": 9,
+                    "negative": 13,
+                    "total": 22
+               }
+          },
+          "q9": {
+               "good_000": {
+                    "positive": 15,
+                    "negative": 4,
+                    "total": 19
+               },
+               "good_001": {
+                    "positive": 19,
+                    "negative": 3,
+                    "total": 22
+               },
+               "good_002": {
+                    "positive": 25,
+                    "negative": 1,
+                    "total": 26
+               },
+               "good_003": {
+                    "positive": 18,
+                    "negative": 1,
+                    "total": 19
+               },
+               "good_004": {
+                    "positive": 13,
+                    "negative": 1,
+                    "total": 14
+               },
+               "good_005": {
+                    "positive": 22,
+                    "negative": 0,
+                    "total": 22
+               },
+               "good_006": {
+                    "positive": 14,
+                    "negative": 1,
+                    "total": 15
+               },
+               "good_007": {
+                    "positive": 17,
+                    "negative": 3,
+                    "total": 20
+               },
+               "good_008": {
+                    "positive": 22,
+                    "negative": 1,
+                    "total": 23
+               },
+               "good_009": {
+                    "positive": 12,
+                    "negative": 1,
+                    "total": 13
+               },
+               "good_010": {
+                    "positive": 17,
+                    "negative": 1,
+                    "total": 18
+               },
+               "good_011": {
+                    "positive": 20,
+                    "negative": 2,
+                    "total": 22
+               },
+               "good_012": {
+                    "positive": 18,
+                    "negative": 1,
+                    "total": 19
+               },
+               "good_013": {
+                    "positive": 27,
+                    "negative": 1,
+                    "total": 28
+               },
+               "good_014": {
+                    "positive": 23,
+                    "negative": 0,
+                    "total": 23
+               },
+               "bad_000": {
+                    "positive": 9,
+                    "negative": 11,
+                    "total": 20
+               },
+               "bad_001": {
+                    "positive": 9,
+                    "negative": 10,
+                    "total": 19
+               },
+               "bad_002": {
+                    "positive": 15,
+                    "negative": 6,
+                    "total": 21
+               },
+               "bad_003": {
+                    "positive": 15,
+                    "negative": 12,
+                    "total": 27
+               },
+               "bad_004": {
+                    "positive": 12,
+                    "negative": 7,
+                    "total": 19
+               }
+          },
+          "q10": {
+               "good_000": {
+                    "positive": 15,
+                    "negative": 0,
+                    "total": 15
+               },
+               "good_001": {
+                    "positive": 28,
+                    "negative": 0,
+                    "total": 28
+               },
+               "good_002": {
+                    "positive": 19,
+                    "negative": 0,
+                    "total": 19
+               },
+               "good_003": {
+                    "positive": 18,
+                    "negative": 1,
+                    "total": 19
+               },
+               "good_004": {
+                    "positive": 19,
+                    "negative": 1,
+                    "total": 20
+               },
+               "good_005": {
+                    "positive": 25,
+                    "negative": 2,
+                    "total": 27
+               },
+               "good_006": {
+                    "positive": 18,
+                    "negative": 1,
+                    "total": 19
+               },
+               "good_007": {
+                    "positive": 14,
+                    "negative": 1,
+                    "total": 15
+               },
+               "good_008": {
+                    "positive": 25,
+                    "negative": 0,
+                    "total": 25
+               },
+               "good_009": {
+                    "positive": 16,
+                    "negative": 0,
+                    "total": 16
+               },
+               "good_010": {
+                    "positive": 21,
+                    "negative": 1,
+                    "total": 22
+               },
+               "good_011": {
+                    "positive": 21,
+                    "negative": 0,
+                    "total": 21
+               },
+               "good_012": {
+                    "positive": 16,
+                    "negative": 2,
+                    "total": 18
+               },
+               "good_013": {
+                    "positive": 19,
+                    "negative": 1,
+                    "total": 20
+               },
+               "good_014": {
+                    "positive": 18,
+                    "negative": 0,
+                    "total": 18
+               },
+               "bad_000": {
+                    "positive": 12,
+                    "negative": 11,
+                    "total": 23
+               },
+               "bad_001": {
+                    "positive": 11,
+                    "negative": 7,
+                    "total": 18
+               },
+               "bad_002": {
+                    "positive": 12,
+                    "negative": 8,
+                    "total": 20
+               },
+               "bad_003": {
+                    "positive": 8,
+                    "negative": 14,
+                    "total": 22
+               },
+               "bad_004": {
+                    "positive": 10,
+                    "negative": 15,
+                    "total": 25
+               }
+          }
+     }
+}

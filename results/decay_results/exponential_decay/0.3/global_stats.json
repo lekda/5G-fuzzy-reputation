@@ -1,0 +1,123 @@
+{
+    "nb_participants": 20,
+    "nb_participants_labels": {
+        "good": 15,
+        "outage": 5
+    },
+    "nb_interactions": 4000,
+    "nb_interactions_labels": 4000,
+    "labels_stats": {
+        "good": {
+            "positive": 3466,
+            "negative": 172,
+            "total": 3638
+        },
+        "outage": {
+            "positive": 326,
+            "negative": 36,
+            "total": 362
+        }
+    },
+    "peer_stats": {
+        "good_001": {
+            "positive": 1,
+            "negative": 0,
+            "total": 1
+        },
+        "good_002": {
+            "positive": 1,
+            "negative": 0,
+            "total": 1
+        },
+        "good_003": {
+            "positive": 91,
+            "negative": 0,
+            "total": 91
+        },
+        "good_004": {
+            "positive": 1,
+            "negative": 0,
+            "total": 1
+        },
+        "good_005": {
+            "positive": 2,
+            "negative": 0,
+            "total": 2
+        },
+        "good_006": {
+            "positive": 3269,
+            "negative": 163,
+            "total": 3432
+        },
+        "good_007": {
+            "positive": 1,
+            "negative": 0,
+            "total": 1
+        },
+        "good_008": {
+            "positive": 2,
+            "negative": 0,
+            "total": 2
+        },
+        "good_009": {
+            "positive": 1,
+            "negative": 0,
+            "total": 1
+        },
+        "good_010": {
+            "positive": 25,
+            "negative": 2,
+            "total": 27
+        },
+        "good_011": {
+            "positive": 13,
+            "negative": 2,
+            "total": 15
+        },
+        "good_012": {
+            "positive": 13,
+            "negative": 1,
+            "total": 14
+        },
+        "good_013": {
+            "positive": 18,
+            "negative": 1,
+            "total": 19
+        },
+        "good_014": {
+            "positive": 2,
+            "negative": 2,
+            "total": 4
+        },
+        "good_015": {
+            "positive": 26,
+            "negative": 1,
+            "total": 27
+        },
+        "outage_001": {
+            "positive": 2,
+            "negative": 1,
+            "total": 3
+        },
+        "outage_002": {
+            "positive": 29,
+            "negative": 7,
+            "total": 36
+        },
+        "outage_003": {
+            "positive": 7,
+            "negative": 5,
+            "total": 12
+        },
+        "outage_004": {
+            "positive": 22,
+            "negative": 4,
+            "total": 26
+        },
+        "outage_005": {
+            "positive": 266,
+            "negative": 19,
+            "total": 285
+        }
+    }
+}

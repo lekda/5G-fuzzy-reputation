@@ -1,0 +1,14 @@
+f_mmtc_good:
+  _target_: reput.peer.Peer
+  behavior:
+    0.0: { "latency": 75, "bandwith": 750, "loss": 60000 }
+  transaction_duration: ${simulation.transaction_duration}
+  total_capacity: ${simulation.capacity}
+  breaking_rate: ${simulation.breaking_rate}
+  peer_interactions: ${simulation.peer_interactions}
+  initial_reput: ${simulation.initial_reput}
+  transaction_type: ${transaction_selector:${simulation.fuzzy}}
+  forgiveness_delay: ${simulation.forgiveness_delay}
+  label: "mmtc_good"
+  dispersion: "low"
+  usecase: "mMTC"

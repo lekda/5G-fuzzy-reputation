@@ -1,0 +1,4 @@
+- nb_peers: 15
+  build_func: ${peers.good}
+- nb_peers: 5
+  build_func: ${peers.bad}

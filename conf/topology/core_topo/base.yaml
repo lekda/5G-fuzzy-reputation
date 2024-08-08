@@ -1,0 +1,2 @@
+- nb_zones: 5
+  build_func: ${topology.core_zones.dense}
